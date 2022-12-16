@@ -1,0 +1,508 @@
+{
+  "interpreterName": "cuttlefish",
+  "interpreterVersion": "v0.1",
+  "hunks": [
+    {
+      "type": "manager",
+      "name": "nrol",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "1",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "tlview",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "0",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "link",
+      "name": "link_2",
+      "inputs": [
+        {
+          "name": "data",
+          "type": "byteArray"
+        },
+        {
+          "name": "mgrMsgs",
+          "type": "byteArray"
+        },
+        {
+          "name": "auto_216_2",
+          "type": "MDmseg"
+        },
+        {
+          "name": "auto_155_2",
+          "type": "boolean"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "data",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "3",
+              "inHunkInput": "0"
+            }
+          ]
+        },
+        {
+          "name": "mgrMsgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "4",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "value": "true"
+        },
+        {
+          "name": "otherLink",
+          "type": "uint16",
+          "value": "1"
+        },
+        {
+          "name": "inputList",
+          "type": "string",
+          "value": "mgrMsgs (byteArray), auto_216_2 (MDmseg), auto_155_2 (boolean)"
+        },
+        {
+          "name": "outputList",
+          "type": "string",
+          "value": "mgrMsgs (byteArray)"
+        }
+      ],
+      "contains": {
+        "interpreterName": "ponyo",
+        "interpreterVersion": "v0.1",
+        "hunks": [
+          {
+            "type": "manager",
+            "name": "ponyo_one",
+            "inputs": [
+              {
+                "name": "mgrMsgs_1024",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "mgrMsgs_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "1",
+                    "inHunkInput": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "link",
+            "name": "link_1",
+            "inputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray"
+              },
+              {
+                "name": "mgrMsgs_1024",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "2",
+                    "inHunkInput": "0"
+                  }
+                ]
+              },
+              {
+                "name": "mgrMsgs_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "0",
+                    "inHunkInput": "0"
+                  }
+                ]
+              },
+              {
+                "name": "auto_95_2",
+                "type": "MDmseg",
+                "connections": [
+                  {
+                    "inHunkIndex": "4",
+                    "inHunkInput": "0"
+                  }
+                ]
+              },
+              {
+                "name": "auto_128_2",
+                "type": "boolean",
+                "connections": [
+                  {
+                    "inHunkIndex": "3",
+                    "inHunkInput": "1"
+                  }
+                ]
+              }
+            ],
+            "states": [
+              {
+                "name": "isActive",
+                "type": "boolean",
+                "value": "true"
+              },
+              {
+                "name": "otherLink",
+                "type": "uint16",
+                "value": "2"
+              },
+              {
+                "name": "inputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray)"
+              },
+              {
+                "name": "outputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray), auto_95_2 (MDmseg), auto_128_2 (boolean)"
+              }
+            ]
+          },
+          {
+            "type": "comm/COBS_USB",
+            "name": "comm/COBS_USB_2",
+            "inputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "1",
+                    "inHunkInput": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "driver/stepper",
+            "name": "step_driver",
+            "inputs": [
+              {
+                "name": "increment",
+                "type": "mseg"
+              },
+              {
+                "name": "enable",
+                "type": "boolean"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "increment",
+                "type": "int32"
+              },
+              {
+                "name": "stallGuard",
+                "type": "uint32"
+              }
+            ],
+            "states": [
+              {
+                "name": "enable",
+                "type": "boolean",
+                "value": "true"
+              },
+              {
+                "name": "steps per unit",
+                "type": "int32",
+                "value": "80"
+              },
+              {
+                "name": "current (6-24)",
+                "type": "uint16",
+                "value": "16"
+              }
+            ]
+          },
+          {
+            "type": "control/MDtoDmseg",
+            "name": "control/MDtoDmseg_4",
+            "inputs": [
+              {
+                "name": "motionSegment",
+                "type": "MDmseg"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "dmSegX",
+                "type": "mseg",
+                "connections": [
+                  {
+                    "inHunkIndex": "3",
+                    "inHunkInput": "0"
+                  }
+                ]
+              },
+              {
+                "name": "dmSegY",
+                "type": "mseg"
+              },
+              {
+                "name": "dmSegZ",
+                "type": "mseg"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "pipes/vfptc",
+      "name": "pipes/vfptc_3",
+      "inputs": [
+        {
+          "name": "data",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "data",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "2",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "pipe status",
+          "type": "string",
+          "value": "open"
+        },
+        {
+          "name": "websocket port",
+          "type": "string",
+          "value": "2042"
+        },
+        {
+          "name": "usb product id",
+          "type": "string",
+          "value": "8022"
+        },
+        {
+          "name": "pipe reset",
+          "type": "boolean",
+          "value": "false"
+        },
+        {
+          "name": "serialport status",
+          "type": "string",
+          "value": "open"
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "view_4",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "2",
+              "inHunkInput": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "adhoc/saturn",
+      "name": "adhoc/saturn_5",
+      "inputs": [
+        {
+          "name": "posn",
+          "type": "array"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "posn",
+          "type": "array"
+        },
+        {
+          "name": "motionSegment",
+          "type": "MDmseg",
+          "connections": [
+            {
+              "inHunkIndex": "2",
+              "inHunkInput": "2"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "incremental mode",
+          "type": "boolean",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "adhoc/tpath",
+      "name": "adhoc/tpath_6",
+      "outputs": [
+        {
+          "name": "position",
+          "type": "array",
+          "connections": [
+            {
+              "inHunkIndex": "5",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "scalar",
+          "type": "number",
+          "value": "1"
+        },
+        {
+          "name": "log progress",
+          "type": "boolean",
+          "value": "true"
+        },
+        {
+          "name": "longpath",
+          "type": "boolean",
+          "value": "false"
+        },
+        {
+          "name": "shortpath",
+          "type": "boolean",
+          "value": "false"
+        },
+        {
+          "name": "sl2path",
+          "type": "boolean",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "type": "interface/array",
+      "name": "interface/array_7",
+      "outputs": [
+        {
+          "name": "arr",
+          "type": "array",
+          "connections": [
+            {
+              "inHunkIndex": "5",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "csv",
+          "type": "string",
+          "value": "0, 0, 0"
+        }
+      ]
+    },
+    {
+      "type": "interface/toggle",
+      "name": "interface/toggle_8",
+      "outputs": [
+        {
+          "name": "out",
+          "type": "boolean",
+          "connections": [
+            {
+              "inHunkIndex": "2",
+              "inHunkInput": "3"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "next out",
+          "type": "boolean",
+          "value": "false"
+        }
+      ]
+    }
+  ]
+}

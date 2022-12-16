@@ -1,0 +1,1915 @@
+{
+  "interpreterName": "cuttlefish",
+  "interpreterVersion": "v0.1",
+  "hunks": [
+    {
+      "type": "manager",
+      "name": "nrol",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 1,
+              "inHunkInput": 0
+            }
+          ]
+        }
+      ],
+      "states": []
+    },
+    {
+      "type": "view",
+      "name": "tlview",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 0,
+              "inHunkInput": 0
+            }
+          ]
+        }
+      ],
+      "states": []
+    },
+    {
+      "type": "link",
+      "name": "link_2",
+      "inputs": [
+        {
+          "name": "data",
+          "type": "byteArray"
+        },
+        {
+          "name": "mgrMsgs",
+          "type": "byteArray"
+        },
+        {
+          "name": "auto_0_3",
+          "type": "byteArray"
+        },
+        {
+          "name": "auto_2_3",
+          "type": "byteArray"
+        },
+        {
+          "name": "auto_176_4",
+          "type": "byteArray"
+        },
+        {
+          "name": "auto_75_5",
+          "type": "byteArray"
+        },
+        {
+          "name": "auto_19_9",
+          "type": "int32"
+        },
+        {
+          "name": "auto_51_9",
+          "type": "int32"
+        },
+        {
+          "name": "auto_103_9",
+          "type": "boolean"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "data",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 3,
+              "inHunkInput": 0
+            }
+          ]
+        },
+        {
+          "name": "mgrMsgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 4,
+              "inHunkInput": 0
+            }
+          ]
+        },
+        {
+          "name": "auto_0_2",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 5,
+              "inHunkInput": 0
+            }
+          ]
+        },
+        {
+          "name": "auto_158_3",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 6,
+              "inHunkInput": 0
+            }
+          ]
+        },
+        {
+          "name": "auto_4_4",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 7,
+              "inHunkInput": 0
+            }
+          ]
+        },
+        {
+          "name": "auto_30_5",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 8,
+              "inHunkInput": 0
+            }
+          ]
+        },
+        {
+          "name": "auto_83_2",
+          "type": "int32",
+          "connections": [
+            {
+              "inHunkIndex": 10,
+              "inHunkInput": 0
+            },
+            {
+              "inHunkIndex": 11,
+              "inHunkInput": 0
+            }
+          ]
+        },
+        {
+          "name": "auto_105_2",
+          "type": "int32",
+          "connections": [
+            {
+              "inHunkIndex": 9,
+              "inHunkInput": 1
+            },
+            {
+              "inHunkIndex": 11,
+              "inHunkInput": 1
+            }
+          ]
+        },
+        {
+          "name": "auto_176_2",
+          "type": "int32",
+          "connections": [
+            {
+              "inHunkIndex": 11,
+              "inHunkInput": 2
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "otherLink",
+          "type": "uint16",
+          "value": 1
+        },
+        {
+          "name": "inputList",
+          "type": "string",
+          "value": "mgrMsgs (byteArray), auto_0_3 (byteArray), auto_2_3 (byteArray), auto_176_4 (byteArray), auto_75_5 (byteArray), auto_19_9 (int32), auto_51_9 (int32), auto_103_9 (boolean)"
+        },
+        {
+          "name": "outputList",
+          "type": "string",
+          "value": "mgrMsgs (byteArray), auto_0_2 (byteArray), auto_158_3 (byteArray), auto_4_4 (byteArray), auto_30_5 (byteArray), auto_83_2 (int32), auto_105_2 (int32), auto_176_2 (int32)"
+        }
+      ],
+      "contains": {
+        "interpreterName": "nautilus",
+        "interpreterVersion": "v0.1",
+        "hunks": [
+          {
+            "type": "manager",
+            "name": "nautilus",
+            "inputs": [
+              {
+                "name": "msgs",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "msgs",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": 1,
+                    "inHunkInput": 1
+                  }
+                ]
+              }
+            ],
+            "states": []
+          },
+          {
+            "type": "link",
+            "name": "link_1",
+            "inputs": [
+              {
+                "name": "data",
+                "type": "byteArray"
+              },
+              {
+                "name": "mgrMsgs",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_0_3",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_211_4",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_30_5",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_120_6",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_236_6",
+                "type": "int32"
+              },
+              {
+                "name": "auto_194_6",
+                "type": "int32"
+              },
+              {
+                "name": "auto_42_6",
+                "type": "int32"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": 2,
+                    "inHunkInput": 0
+                  }
+                ]
+              },
+              {
+                "name": "mgrMsgs",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": 0,
+                    "inHunkInput": 0
+                  }
+                ]
+              },
+              {
+                "name": "auto_0_2",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": 3,
+                    "inHunkInput": 1
+                  }
+                ]
+              },
+              {
+                "name": "auto_193_3",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": 3,
+                    "inHunkInput": 2
+                  }
+                ]
+              },
+              {
+                "name": "auto_202_4",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": 3,
+                    "inHunkInput": 3
+                  }
+                ]
+              },
+              {
+                "name": "auto_6_5",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": 3,
+                    "inHunkInput": 4
+                  }
+                ]
+              },
+              {
+                "name": "auto_229_6",
+                "type": "int32",
+                "connections": [
+                  {
+                    "inHunkIndex": 3,
+                    "inHunkInput": 5
+                  }
+                ]
+              },
+              {
+                "name": "auto_208_7",
+                "type": "int32",
+                "connections": [
+                  {
+                    "inHunkIndex": 3,
+                    "inHunkInput": 6
+                  }
+                ]
+              },
+              {
+                "name": "auto_41_8",
+                "type": "boolean",
+                "connections": [
+                  {
+                    "inHunkIndex": 3,
+                    "inHunkInput": 7
+                  }
+                ]
+              }
+            ],
+            "states": [
+              {
+                "name": "isActive",
+                "type": "boolean",
+                "value": true
+              },
+              {
+                "name": "otherLink",
+                "type": "uint16",
+                "value": 2
+              },
+              {
+                "name": "inputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray), auto_0_3 (byteArray), auto_211_4 (byteArray), auto_30_5 (byteArray), auto_120_6 (byteArray), auto_236_6 (int32), auto_194_6 (int32), auto_42_6 (int32)"
+              },
+              {
+                "name": "outputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray), auto_0_2 (byteArray), auto_193_3 (byteArray), auto_202_4 (byteArray), auto_6_5 (byteArray), auto_229_6 (int32), auto_208_7 (int32), auto_41_8 (boolean)"
+              }
+            ]
+          },
+          {
+            "type": "comm/websocketserver",
+            "name": "comm/websocketserver_2",
+            "inputs": [
+              {
+                "name": "data",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": 1,
+                    "inHunkInput": 0
+                  }
+                ]
+              }
+            ],
+            "states": [
+              {
+                "name": "status",
+                "type": "string",
+                "value": "connected"
+              },
+              {
+                "name": "port",
+                "type": "number",
+                "value": 2042
+              }
+            ]
+          },
+          {
+            "type": "link",
+            "name": "link_3",
+            "inputs": [
+              {
+                "name": "data",
+                "type": "byteArray"
+              },
+              {
+                "name": "mgrMsgs",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_133_2",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_180_3",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_195_4",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_2_8",
+                "type": "int32"
+              },
+              {
+                "name": "auto_55_8",
+                "type": "int32"
+              },
+              {
+                "name": "auto_188_8",
+                "type": "boolean"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": 4,
+                    "inHunkInput": 0
+                  }
+                ]
+              },
+              {
+                "name": "mgrMsgs",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": 1,
+                    "inHunkInput": 2
+                  }
+                ]
+              },
+              {
+                "name": "auto_128_2",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": 1,
+                    "inHunkInput": 3
+                  }
+                ]
+              },
+              {
+                "name": "auto_11_3",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": 1,
+                    "inHunkInput": 4
+                  }
+                ]
+              },
+              {
+                "name": "auto_23_4",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": 1,
+                    "inHunkInput": 5
+                  }
+                ]
+              },
+              {
+                "name": "auto_234_5",
+                "type": "int32",
+                "connections": [
+                  {
+                    "inHunkIndex": 1,
+                    "inHunkInput": 6
+                  }
+                ]
+              },
+              {
+                "name": "auto_171_6",
+                "type": "int32",
+                "connections": [
+                  {
+                    "inHunkIndex": 1,
+                    "inHunkInput": 7
+                  }
+                ]
+              },
+              {
+                "name": "auto_242_7",
+                "type": "int32",
+                "connections": [
+                  {
+                    "inHunkIndex": 1,
+                    "inHunkInput": 8
+                  }
+                ]
+              }
+            ],
+            "states": [
+              {
+                "name": "isActive",
+                "type": "boolean",
+                "value": true
+              },
+              {
+                "name": "otherLink",
+                "type": "uint16",
+                "value": 1
+              },
+              {
+                "name": "inputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray), auto_133_2 (byteArray), auto_180_3 (byteArray), auto_195_4 (byteArray), auto_2_8 (int32), auto_55_8 (int32), auto_188_8 (boolean)"
+              },
+              {
+                "name": "outputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray), auto_128_2 (byteArray), auto_11_3 (byteArray), auto_23_4 (byteArray), auto_234_5 (int32), auto_171_6 (int32), auto_242_7 (int32)"
+              }
+            ],
+            "contains": {
+              "interpreterName": "ponyo",
+              "interpreterVersion": "v0.1",
+              "hunks": [
+                {
+                  "type": "manager",
+                  "name": "ponyo_one",
+                  "inputs": [
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 1,
+                          "inHunkInput": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "states": []
+                },
+                {
+                  "type": "link",
+                  "name": "link_1",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "auto_86_3_512",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "auto_115_4_512",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "auto_239_5_512",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "auto_152_5",
+                      "type": "int32"
+                    },
+                    {
+                      "name": "auto_137_5",
+                      "type": "int32"
+                    },
+                    {
+                      "name": "auto_223_5",
+                      "type": "int32"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 2,
+                          "inHunkInput": 0
+                        }
+                      ]
+                    },
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 0,
+                          "inHunkInput": 0
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_30_3_512",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 6,
+                          "inHunkInput": 1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_97_4_512",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 7,
+                          "inHunkInput": 1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_42_5_512",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 8,
+                          "inHunkInput": 1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_77_5",
+                      "type": "int32",
+                      "connections": [
+                        {
+                          "inHunkIndex": 8,
+                          "inHunkInput": 2
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_100_6",
+                      "type": "int32",
+                      "connections": [
+                        {
+                          "inHunkIndex": 7,
+                          "inHunkInput": 2
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_13_7",
+                      "type": "boolean",
+                      "connections": [
+                        {
+                          "inHunkIndex": 6,
+                          "inHunkInput": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "states": [
+                    {
+                      "name": "isActive",
+                      "type": "boolean",
+                      "value": true
+                    },
+                    {
+                      "name": "otherLink",
+                      "type": "uint16",
+                      "value": 3
+                    },
+                    {
+                      "name": "inputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray), auto_86_3 (byteArray), auto_115_4 (byteArray), auto_239_5 (byteArray), auto_152_5 (int32), auto_137_5 (int32), auto_223_5 (int32)"
+                    },
+                    {
+                      "name": "outputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray), auto_30_3 (byteArray), auto_97_4 (byteArray), auto_42_5 (byteArray), auto_77_5 (int32), auto_100_6 (int32), auto_13_7 (boolean)"
+                    }
+                  ]
+                },
+                {
+                  "type": "comm/COBSerialUSB",
+                  "name": "comm/COBSerialUSB_2",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 1,
+                          "inHunkInput": 0
+                        }
+                      ]
+                    }
+                  ],
+                  "states": []
+                },
+                {
+                  "type": "comm/COBSerialRJ45_A",
+                  "name": "comm/COBSerialRJ45_A_3",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 6,
+                          "inHunkInput": 0
+                        }
+                      ]
+                    }
+                  ],
+                  "states": []
+                },
+                {
+                  "type": "comm/COBSerialRJ45_B",
+                  "name": "comm/COBSerialRJ45_B_4",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 7,
+                          "inHunkInput": 0
+                        }
+                      ]
+                    }
+                  ],
+                  "states": []
+                },
+                {
+                  "type": "comm/COBSerialRJ45_E",
+                  "name": "comm/COBSerialRJ45_E_5",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 8,
+                          "inHunkInput": 0
+                        }
+                      ]
+                    }
+                  ],
+                  "states": []
+                },
+                {
+                  "type": "link",
+                  "name": "link_6",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "mgrMsgs_512",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "auto_202_3",
+                      "type": "boolean"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 3,
+                          "inHunkInput": 0
+                        }
+                      ]
+                    },
+                    {
+                      "name": "mgrMsgs_512",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 1,
+                          "inHunkInput": 2
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_226_2",
+                      "type": "int32",
+                      "connections": [
+                        {
+                          "inHunkIndex": 1,
+                          "inHunkInput": 6
+                        }
+                      ]
+                    }
+                  ],
+                  "states": [
+                    {
+                      "name": "isActive",
+                      "type": "boolean",
+                      "value": true
+                    },
+                    {
+                      "name": "otherLink",
+                      "type": "uint16",
+                      "value": 1
+                    },
+                    {
+                      "name": "inputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray), auto_202_3 (boolean)"
+                    },
+                    {
+                      "name": "outputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray), auto_226_2 (int32)"
+                    }
+                  ],
+                  "contains": {
+                    "interpreterName": "ponyo",
+                    "interpreterVersion": "v0.1",
+                    "hunks": [
+                      {
+                        "type": "manager",
+                        "name": "ponyo_one",
+                        "inputs": [
+                          {
+                            "name": "mgrMsgs_1024",
+                            "type": "byteArray"
+                          }
+                        ],
+                        "outputs": [
+                          {
+                            "name": "mgrMsgs_1024",
+                            "type": "byteArray",
+                            "connections": [
+                              {
+                                "inHunkIndex": 1,
+                                "inHunkInput": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "states": []
+                      },
+                      {
+                        "type": "link",
+                        "name": "link_1",
+                        "inputs": [
+                          {
+                            "name": "data_1024",
+                            "type": "byteArray"
+                          },
+                          {
+                            "name": "mgrMsgs_1024",
+                            "type": "byteArray"
+                          },
+                          {
+                            "name": "auto_101_2",
+                            "type": "int32"
+                          }
+                        ],
+                        "outputs": [
+                          {
+                            "name": "data_1024",
+                            "type": "byteArray",
+                            "connections": [
+                              {
+                                "inHunkIndex": 2,
+                                "inHunkInput": 0
+                              }
+                            ]
+                          },
+                          {
+                            "name": "mgrMsgs_1024",
+                            "type": "byteArray",
+                            "connections": [
+                              {
+                                "inHunkIndex": 0,
+                                "inHunkInput": 0
+                              }
+                            ]
+                          },
+                          {
+                            "name": "auto_151_9",
+                            "type": "boolean",
+                            "connections": [
+                              {
+                                "inHunkIndex": 3,
+                                "inHunkInput": 0
+                              }
+                            ]
+                          }
+                        ],
+                        "states": [
+                          {
+                            "name": "isActive",
+                            "type": "boolean",
+                            "value": true
+                          },
+                          {
+                            "name": "otherLink",
+                            "type": "uint16",
+                            "value": 6
+                          },
+                          {
+                            "name": "inputList",
+                            "type": "string",
+                            "value": "mgrMsgs (byteArray), auto_101_2 (int32)"
+                          },
+                          {
+                            "name": "outputList",
+                            "type": "string",
+                            "value": "mgrMsgs (byteArray), auto_151_9 (boolean)"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "comm/COBSerialRJ45_A",
+                        "name": "comm/COBSerialRJ45_A_2",
+                        "inputs": [
+                          {
+                            "name": "data_1024",
+                            "type": "byteArray"
+                          }
+                        ],
+                        "outputs": [
+                          {
+                            "name": "data_1024",
+                            "type": "byteArray",
+                            "connections": [
+                              {
+                                "inHunkIndex": 1,
+                                "inHunkInput": 0
+                              }
+                            ]
+                          }
+                        ],
+                        "states": []
+                      },
+                      {
+                        "type": "loadcell",
+                        "name": "loadcell_3",
+                        "inputs": [
+                          {
+                            "name": "read",
+                            "type": "boolean"
+                          },
+                          {
+                            "name": "tare",
+                            "type": "boolean"
+                          }
+                        ],
+                        "outputs": [
+                          {
+                            "name": "24bit",
+                            "type": "int32",
+                            "connections": [
+                              {
+                                "inHunkIndex": 1,
+                                "inHunkInput": 2
+                              }
+                            ]
+                          }
+                        ],
+                        "states": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "link",
+                  "name": "link_7",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "mgrMsgs_512",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "auto_96_3",
+                      "type": "int32"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 4,
+                          "inHunkInput": 0
+                        }
+                      ]
+                    },
+                    {
+                      "name": "mgrMsgs_512",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 1,
+                          "inHunkInput": 3
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_199_2",
+                      "type": "int32",
+                      "connections": [
+                        {
+                          "inHunkIndex": 1,
+                          "inHunkInput": 7
+                        }
+                      ]
+                    }
+                  ],
+                  "states": [
+                    {
+                      "name": "isActive",
+                      "type": "boolean",
+                      "value": true
+                    },
+                    {
+                      "name": "otherLink",
+                      "type": "uint16",
+                      "value": 1
+                    },
+                    {
+                      "name": "inputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray), auto_96_3 (int32)"
+                    },
+                    {
+                      "name": "outputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray), auto_199_2 (int32)"
+                    }
+                  ],
+                  "contains": {
+                    "interpreterName": "ponyo",
+                    "interpreterVersion": "v0.1",
+                    "hunks": [
+                      {
+                        "type": "manager",
+                        "name": "ponyo_one",
+                        "inputs": [
+                          {
+                            "name": "mgrMsgs_1024",
+                            "type": "byteArray"
+                          }
+                        ],
+                        "outputs": [
+                          {
+                            "name": "mgrMsgs_1024",
+                            "type": "byteArray",
+                            "connections": [
+                              {
+                                "inHunkIndex": 1,
+                                "inHunkInput": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "states": []
+                      },
+                      {
+                        "type": "link",
+                        "name": "link_1",
+                        "inputs": [
+                          {
+                            "name": "data_1024",
+                            "type": "byteArray"
+                          },
+                          {
+                            "name": "mgrMsgs_1024",
+                            "type": "byteArray"
+                          },
+                          {
+                            "name": "auto_167_2",
+                            "type": "int32"
+                          }
+                        ],
+                        "outputs": [
+                          {
+                            "name": "data_1024",
+                            "type": "byteArray",
+                            "connections": [
+                              {
+                                "inHunkIndex": 2,
+                                "inHunkInput": 0
+                              }
+                            ]
+                          },
+                          {
+                            "name": "mgrMsgs_1024",
+                            "type": "byteArray",
+                            "connections": [
+                              {
+                                "inHunkIndex": 0,
+                                "inHunkInput": 0
+                              }
+                            ]
+                          },
+                          {
+                            "name": "auto_17_9",
+                            "type": "int32",
+                            "connections": [
+                              {
+                                "inHunkIndex": 3,
+                                "inHunkInput": 0
+                              }
+                            ]
+                          }
+                        ],
+                        "states": [
+                          {
+                            "name": "isActive",
+                            "type": "boolean",
+                            "value": true
+                          },
+                          {
+                            "name": "otherLink",
+                            "type": "uint16",
+                            "value": 7
+                          },
+                          {
+                            "name": "inputList",
+                            "type": "string",
+                            "value": "mgrMsgs (byteArray), auto_167_2 (int32)"
+                          },
+                          {
+                            "name": "outputList",
+                            "type": "string",
+                            "value": "mgrMsgs (byteArray), auto_17_9 (int32)"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "comm/COBSerialRJ45_A",
+                        "name": "comm/COBSerialRJ45_A_2",
+                        "inputs": [
+                          {
+                            "name": "data_1024",
+                            "type": "byteArray"
+                          }
+                        ],
+                        "outputs": [
+                          {
+                            "name": "data_1024",
+                            "type": "byteArray",
+                            "connections": [
+                              {
+                                "inHunkIndex": 1,
+                                "inHunkInput": 0
+                              }
+                            ]
+                          }
+                        ],
+                        "states": []
+                      },
+                      {
+                        "type": "stepper",
+                        "name": "stepper_3",
+                        "inputs": [
+                          {
+                            "name": "increment",
+                            "type": "int32"
+                          },
+                          {
+                            "name": "enable",
+                            "type": "boolean"
+                          }
+                        ],
+                        "outputs": [
+                          {
+                            "name": "increment",
+                            "type": "int32",
+                            "connections": [
+                              {
+                                "inHunkIndex": 1,
+                                "inHunkInput": 2
+                              }
+                            ]
+                          },
+                          {
+                            "name": "stallGuard",
+                            "type": "uint32"
+                          }
+                        ],
+                        "states": [
+                          {
+                            "name": "current (6-24)",
+                            "type": "uint16",
+                            "value": 16
+                          },
+                          {
+                            "name": "enable",
+                            "type": "boolean",
+                            "value": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "link",
+                  "name": "link_8",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "mgrMsgs_512",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "auto_213_3",
+                      "type": "int32"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 5,
+                          "inHunkInput": 0
+                        }
+                      ]
+                    },
+                    {
+                      "name": "mgrMsgs_512",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": 1,
+                          "inHunkInput": 4
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_147_2",
+                      "type": "int32",
+                      "connections": [
+                        {
+                          "inHunkIndex": 1,
+                          "inHunkInput": 5
+                        }
+                      ]
+                    }
+                  ],
+                  "states": [
+                    {
+                      "name": "isActive",
+                      "type": "boolean",
+                      "value": true
+                    },
+                    {
+                      "name": "otherLink",
+                      "type": "uint16",
+                      "value": 1
+                    },
+                    {
+                      "name": "inputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray), auto_213_3 (int32)"
+                    },
+                    {
+                      "name": "outputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray), auto_147_2 (int32)"
+                    }
+                  ],
+                  "contains": {
+                    "interpreterName": "ponyo",
+                    "interpreterVersion": "v0.1",
+                    "hunks": [
+                      {
+                        "type": "manager",
+                        "name": "ponyo_one",
+                        "inputs": [
+                          {
+                            "name": "mgrMsgs_1024",
+                            "type": "byteArray"
+                          }
+                        ],
+                        "outputs": [
+                          {
+                            "name": "mgrMsgs_1024",
+                            "type": "byteArray",
+                            "connections": [
+                              {
+                                "inHunkIndex": 1,
+                                "inHunkInput": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "states": []
+                      },
+                      {
+                        "type": "link",
+                        "name": "link_1",
+                        "inputs": [
+                          {
+                            "name": "data_1024",
+                            "type": "byteArray"
+                          },
+                          {
+                            "name": "mgrMsgs_1024",
+                            "type": "byteArray"
+                          },
+                          {
+                            "name": "auto_210_2",
+                            "type": "int32"
+                          }
+                        ],
+                        "outputs": [
+                          {
+                            "name": "data_1024",
+                            "type": "byteArray",
+                            "connections": [
+                              {
+                                "inHunkIndex": 2,
+                                "inHunkInput": 0
+                              }
+                            ]
+                          },
+                          {
+                            "name": "mgrMsgs_1024",
+                            "type": "byteArray",
+                            "connections": [
+                              {
+                                "inHunkIndex": 0,
+                                "inHunkInput": 0
+                              }
+                            ]
+                          },
+                          {
+                            "name": "auto_218_9",
+                            "type": "int32",
+                            "connections": [
+                              {
+                                "inHunkIndex": 3,
+                                "inHunkInput": 0
+                              }
+                            ]
+                          }
+                        ],
+                        "states": [
+                          {
+                            "name": "isActive",
+                            "type": "boolean",
+                            "value": true
+                          },
+                          {
+                            "name": "otherLink",
+                            "type": "uint16",
+                            "value": 8
+                          },
+                          {
+                            "name": "inputList",
+                            "type": "string",
+                            "value": "mgrMsgs (byteArray), auto_210_2 (int32)"
+                          },
+                          {
+                            "name": "outputList",
+                            "type": "string",
+                            "value": "mgrMsgs (byteArray), auto_218_9 (int32)"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "comm/COBSerialRJ45_A",
+                        "name": "comm/COBSerialRJ45_A_2",
+                        "inputs": [
+                          {
+                            "name": "data_1024",
+                            "type": "byteArray"
+                          }
+                        ],
+                        "outputs": [
+                          {
+                            "name": "data_1024",
+                            "type": "byteArray",
+                            "connections": [
+                              {
+                                "inHunkIndex": 1,
+                                "inHunkInput": 0
+                              }
+                            ]
+                          }
+                        ],
+                        "states": []
+                      },
+                      {
+                        "type": "stepper",
+                        "name": "stepper_3",
+                        "inputs": [
+                          {
+                            "name": "increment",
+                            "type": "int32"
+                          },
+                          {
+                            "name": "enable",
+                            "type": "boolean"
+                          }
+                        ],
+                        "outputs": [
+                          {
+                            "name": "increment",
+                            "type": "int32",
+                            "connections": [
+                              {
+                                "inHunkIndex": 1,
+                                "inHunkInput": 2
+                              }
+                            ]
+                          },
+                          {
+                            "name": "stallGuard",
+                            "type": "uint32"
+                          }
+                        ],
+                        "states": [
+                          {
+                            "name": "current (6-24)",
+                            "type": "uint16",
+                            "value": 16
+                          },
+                          {
+                            "name": "enable",
+                            "type": "boolean",
+                            "value": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "comm/cobserial",
+            "name": "comm/cobserial_4",
+            "inputs": [
+              {
+                "name": "data",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": 3,
+                    "inHunkInput": 0
+                  }
+                ]
+              }
+            ],
+            "states": [
+              {
+                "name": "status",
+                "type": "string",
+                "value": "closed"
+              },
+              {
+                "name": "pid",
+                "type": "string",
+                "value": "8022"
+              },
+              {
+                "name": "refresh",
+                "type": "boolean",
+                "value": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "comm/websocketclient",
+      "name": "comm/websocketclient_3",
+      "inputs": [
+        {
+          "name": "data",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "data",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 2,
+              "inHunkInput": 0
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "status",
+          "type": "string",
+          "value": "open"
+        },
+        {
+          "name": "retrycount",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "retryreset",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "address",
+          "type": "string",
+          "value": "127.0.0.1"
+        },
+        {
+          "name": "port",
+          "type": "number",
+          "value": 2042
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "view_4",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 2,
+              "inHunkInput": 1
+            }
+          ]
+        }
+      ],
+      "states": []
+    },
+    {
+      "type": "view",
+      "name": "view_5",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 2,
+              "inHunkInput": 2
+            }
+          ]
+        }
+      ],
+      "states": []
+    },
+    {
+      "type": "view",
+      "name": "view_6",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 2,
+              "inHunkInput": 3
+            }
+          ]
+        }
+      ],
+      "states": []
+    },
+    {
+      "type": "view",
+      "name": "view_7",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 2,
+              "inHunkInput": 4
+            }
+          ]
+        }
+      ],
+      "states": []
+    },
+    {
+      "type": "view",
+      "name": "view_8",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 2,
+              "inHunkInput": 5
+            }
+          ]
+        }
+      ],
+      "states": []
+    },
+    {
+      "type": "data/accumulator",
+      "name": "data/accumulator_9",
+      "inputs": [
+        {
+          "name": "x",
+          "type": "number"
+        },
+        {
+          "name": "y",
+          "type": "number"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "accumulated",
+          "type": "reference",
+          "connections": [
+            {
+              "inHunkIndex": 13,
+              "inHunkInput": 0
+            },
+            {
+              "inHunkIndex": 12,
+              "inHunkInput": 0
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "reset",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "primitive/increment",
+      "name": "primitive/increment_10",
+      "inputs": [
+        {
+          "name": "increment",
+          "type": "number"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "value",
+          "type": "number",
+          "connections": [
+            {
+              "inHunkIndex": 9,
+              "inHunkInput": 0
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "reset",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "control/ussm",
+      "name": "control/ussm_11",
+      "inputs": [
+        {
+          "name": "lmReturn",
+          "type": "int32"
+        },
+        {
+          "name": "rmReturn",
+          "type": "int32"
+        },
+        {
+          "name": "rdReturn",
+          "type": "int32"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "lmOut",
+          "type": "int32",
+          "connections": [
+            {
+              "inHunkIndex": 2,
+              "inHunkInput": 6
+            }
+          ]
+        },
+        {
+          "name": "rmOut",
+          "type": "int32",
+          "connections": [
+            {
+              "inHunkIndex": 2,
+              "inHunkInput": 7
+            }
+          ]
+        },
+        {
+          "name": "rdTrig",
+          "type": "boolean",
+          "connections": [
+            {
+              "inHunkIndex": 2,
+              "inHunkInput": 8
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "runSequence",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "stepIncrement",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "data/save",
+      "name": "data/save_12",
+      "inputs": [
+        {
+          "name": "object",
+          "type": "reference"
+        },
+        {
+          "name": "trigger",
+          "type": "boolean"
+        }
+      ],
+      "outputs": [],
+      "states": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "datas"
+        },
+        {
+          "name": "save",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "output/linechart",
+      "name": "output/linechart_13",
+      "inputs": [
+        {
+          "name": "array",
+          "type": "reference"
+        }
+      ],
+      "outputs": [],
+      "states": [
+        {
+          "name": "displayCount",
+          "type": "number",
+          "value": 50
+        }
+      ]
+    }
+  ]
+}

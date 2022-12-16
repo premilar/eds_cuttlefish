@@ -1,0 +1,117 @@
+{
+  "interpreterName": "cuttlefish",
+  "interpreterVersion": "v0.1",
+  "hunks": [
+    {
+      "type": "manager",
+      "name": "nrol",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "1",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "tlview",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "0",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "template",
+      "name": "template_2",
+      "inputs": [
+        {
+          "name": "quiet",
+          "type": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loud",
+          "type": "string",
+          "connections": [
+            {
+              "inHunkIndex": "4",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "exclaim",
+          "type": "string",
+          "value": "!"
+        }
+      ]
+    },
+    {
+      "type": "interface/string",
+      "name": "interface/string_3",
+      "outputs": [
+        {
+          "name": "string",
+          "type": "string",
+          "connections": [
+            {
+              "inHunkIndex": "2",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "data/logger",
+      "name": "data/logger_5",
+      "inputs": [
+        {
+          "name": "tolog",
+          "type": "reference"
+        }
+      ],
+      "states": [
+        {
+          "name": "prefix",
+          "type": "string",
+          "value": "LOG:"
+        },
+        {
+          "name": "console",
+          "type": "boolean",
+          "value": "true"
+        }
+      ]
+    }
+  ]
+}

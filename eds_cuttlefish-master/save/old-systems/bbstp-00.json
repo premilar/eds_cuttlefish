@@ -1,0 +1,330 @@
+{
+  "interpreterName": "cuttlefish",
+  "interpreterVersion": "v0.1",
+  "hunks": [
+    {
+      "type": "manager",
+      "name": "nrol",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 1,
+              "inHunkInput": 0
+            }
+          ]
+        }
+      ],
+      "states": []
+    },
+    {
+      "type": "view",
+      "name": "tlview",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 0,
+              "inHunkInput": 0
+            }
+          ]
+        }
+      ],
+      "states": []
+    },
+    {
+      "type": "debug/timing",
+      "name": "debug/timing_2",
+      "inputs": [
+        {
+          "name": "thru",
+          "type": "boolean"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "thru",
+          "type": "boolean",
+          "connections": [
+            {
+              "inHunkIndex": 3,
+              "inHunkInput": 0
+            }
+          ]
+        },
+        {
+          "name": "mean (ms)",
+          "type": "number",
+          "connections": [
+            {
+              "inHunkIndex": 5,
+              "inHunkInput": 0
+            },
+            {
+              "inHunkIndex": 7,
+              "inHunkInput": 2
+            }
+          ]
+        },
+        {
+          "name": "variance",
+          "type": "number",
+          "connections": [
+            {
+              "inHunkIndex": 8,
+              "inHunkInput": 2
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "average",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "name": "log",
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    },
+    {
+      "type": "math/booleaninversion",
+      "name": "math/booleaninversion_3",
+      "inputs": [
+        {
+          "name": "state",
+          "type": "boolean"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "connections": [
+            {
+              "inHunkIndex": 2,
+              "inHunkInput": 0
+            }
+          ]
+        }
+      ],
+      "states": []
+    },
+    {
+      "type": "interface/button",
+      "name": "interface/button_4",
+      "inputs": [
+        {
+          "name": "trigger",
+          "type": "any"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "onclick",
+          "type": "boolean",
+          "connections": [
+            {
+              "inHunkIndex": 2,
+              "inHunkInput": 0
+            }
+          ]
+        }
+      ],
+      "states": []
+    },
+    {
+      "type": "primitive/counter",
+      "name": "primitive/counter_5",
+      "inputs": [
+        {
+          "name": "event",
+          "type": "any"
+        },
+        {
+          "name": "reset",
+          "type": "boolean"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "count",
+          "type": "number",
+          "connections": [
+            {
+              "inHunkIndex": 7,
+              "inHunkInput": 1
+            },
+            {
+              "inHunkIndex": 8,
+              "inHunkInput": 1
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "reset",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "output/linechart",
+      "name": "output/linechart_6",
+      "inputs": [
+        {
+          "name": "array",
+          "type": "reference"
+        }
+      ],
+      "outputs": [],
+      "states": [
+        {
+          "name": "displayCount",
+          "type": "number",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "type": "data/accumulator",
+      "name": "data/accumulator_7",
+      "inputs": [
+        {
+          "name": "reset",
+          "type": "boolean"
+        },
+        {
+          "name": "x",
+          "type": "number"
+        },
+        {
+          "name": "y",
+          "type": "number"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "accumulated",
+          "type": "reference",
+          "connections": [
+            {
+              "inHunkIndex": 6,
+              "inHunkInput": 0
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "reset",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "data/accumulator",
+      "name": "data/accumulator_8",
+      "inputs": [
+        {
+          "name": "reset",
+          "type": "boolean"
+        },
+        {
+          "name": "x",
+          "type": "number"
+        },
+        {
+          "name": "y",
+          "type": "number"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "accumulated",
+          "type": "reference",
+          "connections": [
+            {
+              "inHunkIndex": 9,
+              "inHunkInput": 0
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "reset",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "output/linechart",
+      "name": "output/linechart_9",
+      "inputs": [
+        {
+          "name": "array",
+          "type": "reference"
+        }
+      ],
+      "outputs": [],
+      "states": [
+        {
+          "name": "displayCount",
+          "type": "number",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "type": "interface/button",
+      "name": "interface/button_10",
+      "inputs": [
+        {
+          "name": "trigger",
+          "type": "any"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "onclick",
+          "type": "boolean",
+          "connections": [
+            {
+              "inHunkIndex": 7,
+              "inHunkInput": 0
+            },
+            {
+              "inHunkIndex": 8,
+              "inHunkInput": 0
+            }
+          ]
+        }
+      ],
+      "states": []
+    }
+  ]
+}

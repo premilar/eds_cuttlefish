@@ -1,0 +1,39 @@
+{
+    "programname": "wstest",
+    "hunks": [
+    {
+        "name": "input/string",
+        "id": "strng"
+    },
+    {
+        "name": "interface/logger",
+        "id": "lg"
+    },
+    {
+        "name": "interface/logger",
+        "id": "lgws"
+    },
+    {
+        "name": "comm/websocketclient",
+        "id": "WSONE_ONE"
+    }],
+    "links": [
+    {
+        "outhunk": "strng",
+        "outname": "string",
+        "inhunk": "lg",
+        "inname": "tolog"
+    },
+    {
+        "outhunk": "strng",
+        "outname": "string",
+        "inhunk": "WSONE_ONE",
+        "inname": "bytes"
+    },
+    {
+        "outhunk": "WSONE_ONE",
+        "outname": "bytes",
+        "inhunk": "lgws",
+        "inname": "tolog"
+    }]
+}

@@ -1,0 +1,259 @@
+{
+  "interpreterName": "cuttlefish",
+  "interpreterVersion": "v0.1",
+  "hunks": [
+    {
+      "type": "manager",
+      "name": "nrol",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "1",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "tlview",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "0",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image/readPNG",
+      "name": "image/readPNG_2",
+      "outputs": [
+        {
+          "name": "image",
+          "type": "ImageData",
+          "connections": [
+            {
+              "inHunkIndex": "3",
+              "inHunkInput": "0"
+            }
+          ]
+        },
+        {
+          "name": "dpi",
+          "type": "number"
+        }
+      ],
+      "states": [
+        {
+          "name": "release",
+          "type": "boolean",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "type": "image/thresholdRGBA",
+      "name": "image/thresholdRGBA_3",
+      "inputs": [
+        {
+          "name": "image",
+          "type": "ImageData"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "ImageData",
+          "connections": [
+            {
+              "inHunkIndex": "4",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "threshold",
+          "type": "number",
+          "value": "0.5"
+        }
+      ]
+    },
+    {
+      "type": "image/distanceTransform",
+      "name": "image/distanceTransform_4",
+      "inputs": [
+        {
+          "name": "image",
+          "type": "ImageData"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "Float32Array",
+          "connections": [
+            {
+              "inHunkIndex": "5",
+              "inHunkInput": "0"
+            }
+          ]
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "connections": [
+            {
+              "inHunkIndex": "5",
+              "inHunkInput": "1"
+            }
+          ]
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "connections": [
+            {
+              "inHunkIndex": "5",
+              "inHunkInput": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image/offset",
+      "name": "image/offset_5",
+      "inputs": [
+        {
+          "name": "image",
+          "type": "Float32Array"
+        },
+        {
+          "name": "width",
+          "type": "number"
+        },
+        {
+          "name": "height",
+          "type": "number"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "ImageData",
+          "connections": [
+            {
+              "inHunkIndex": "6",
+              "inHunkInput": "0"
+            },
+            {
+              "inHunkIndex": "9",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "offset",
+          "type": "number",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "type": "image/edgeDetect",
+      "name": "image/edgeDetect_7",
+      "inputs": [
+        {
+          "name": "image",
+          "type": "ImageData"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "ImageData",
+          "connections": [
+            {
+              "inHunkIndex": "7",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image/orientEdges",
+      "name": "image/orientEdges_9",
+      "inputs": [
+        {
+          "name": "image",
+          "type": "ImageData"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "ImageData",
+          "connections": [
+            {
+              "inHunkIndex": "8",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image/vectorize",
+      "name": "image/vectorize_10",
+      "inputs": [
+        {
+          "name": "image",
+          "type": "ImageData"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Vectors",
+          "type": "array"
+        }
+      ]
+    },
+    {
+      "type": "image/displayImageData",
+      "name": "image/displayImageData_9",
+      "inputs": [
+        {
+          "name": "image",
+          "type": "ImageData"
+        }
+      ]
+    }
+  ]
+}

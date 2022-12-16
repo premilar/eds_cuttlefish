@@ -1,0 +1,233 @@
+{
+  "interpreterName": "ponyo",
+  "interpreterVersion": "v0.1",
+  "hunks": [
+    {
+      "type": "manager",
+      "name": "ponyo_one",
+      "inputs": [
+        {
+          "name": "mgrMsgs_1024",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mgrMsgs_1024",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 1,
+              "inHunkInput": 1
+            }
+          ]
+        }
+      ],
+      "states": []
+    },
+    {
+      "type": "link",
+      "name": "link_1",
+      "inputs": [
+        {
+          "name": "data_1024",
+          "type": "byteArray"
+        },
+        {
+          "name": "mgrMsgs_1024",
+          "type": "byteArray"
+        },
+        {
+          "name": "atd_1024",
+          "type": "byteArray"
+        },
+        {
+          "name": "steps",
+          "type": "int32"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "data_1024",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 2,
+              "inHunkInput": 0
+            }
+          ]
+        },
+        {
+          "name": "mgrMsgs_1024",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 0,
+              "inHunkInput": 0
+            }
+          ]
+        },
+        {
+          "name": "auto_207_3_1024",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 4,
+              "inHunkInput": 1
+            }
+          ]
+        },
+        {
+          "name": "steps",
+          "type": "int32",
+          "connections": [
+            {
+              "inHunkIndex": 4,
+              "inHunkInput": 2
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "otherLink",
+          "type": "uint16",
+          "value": 3
+        },
+        {
+          "name": "inputList",
+          "type": "string",
+          "value": "mgrMsgs (byteArray), atd (byteArray), steps (int32)"
+        },
+        {
+          "name": "outputList",
+          "type": "string",
+          "value": "mgrMsgs (byteArray), auto_207_3 (byteArray), steps (int32)"
+        }
+      ]
+    },
+    {
+      "type": "comm/COBSerialUSB",
+      "name": "comm/COBSerialUSB_2",
+      "inputs": [
+        {
+          "name": "data_1024",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "data_1024",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 1,
+              "inHunkInput": 0
+            }
+          ]
+        }
+      ],
+      "states": []
+    },
+    {
+      "type": "comm/COBSerialRJ45",
+      "name": "comm/COBSerialRJ45_3",
+      "inputs": [
+        {
+          "name": "data_1024",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "data_1024",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 4,
+              "inHunkInput": 0
+            }
+          ]
+        }
+      ],
+      "states": []
+    },
+    {
+      "type": "link",
+      "name": "link_4",
+      "inputs": [
+        {
+          "name": "data_1024",
+          "type": "byteArray"
+        },
+        {
+          "name": "mgrMsgs_1024",
+          "type": "byteArray"
+        },
+        {
+          "name": "steps",
+          "type": "int32"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "data_1024",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 3,
+              "inHunkInput": 0
+            }
+          ]
+        },
+        {
+          "name": "mgrMsgs_1024",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": 1,
+              "inHunkInput": 2
+            }
+          ]
+        },
+        {
+          "name": "steps",
+          "type": "int32",
+          "connections": [
+            {
+              "inHunkIndex": 1,
+              "inHunkInput": 3
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "otherLink",
+          "type": "uint16",
+          "value": 1
+        },
+        {
+          "name": "inputList",
+          "type": "string",
+          "value": "mgrMsgs (byteArray), steps (int32)"
+        },
+        {
+          "name": "outputList",
+          "type": "string",
+          "value": "mgrMsgs (byteArray), steps (int32)"
+        }
+      ]
+    }
+  ]
+}

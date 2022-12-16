@@ -1,0 +1,39 @@
+{
+    "programname": "llink",
+    "hunks": [
+    {
+        "name": "link",
+        "id": "lnkone",
+        "state": {
+          "inputList": "mgrMsgs (byteArray), ipOne (uint32)",
+          "outputList": "mgrMsgs (byteArray), ipOut (uint32)"
+        }
+    },
+    {
+        "name": "interface/number",
+        "id": "nmbr"
+    },
+    {
+      "name": "interface/logger",
+      "id": "lger"
+    }],
+    "links": [
+    {
+        "outhunk": "nmbr",
+        "outname": "num",
+        "inhunk": "lnkone",
+        "inname": "ipOne"
+    },
+    {
+      "outhunk": "lnkone",
+      "outname": "data",
+      "inhunk": "lnkone",
+      "inname": "data"
+    },
+    {
+      "outhunk": "lnkone",
+      "outname": "ipOut",
+      "inhunk": "lger",
+      "inname": "tolog"
+    }]
+}

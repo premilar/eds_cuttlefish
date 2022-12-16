@@ -1,0 +1,158 @@
+{
+  "interpreterName": "ponyo",
+  "interpreterVersion": "v0.1",
+  "hunks": [{
+      "type": "manager",
+      "name": "ponyo_one",
+      "inputs": [{
+        "name": "mgrMsgs_1024",
+        "type": "byteArray"
+      }],
+      "outputs": [{
+        "name": "mgrMsgs_1024",
+        "type": "byteArray",
+        "connections": [{
+          "inHunkIndex": 1,
+          "inHunkInput": 1
+        }]
+      }],
+      "states": []
+    },
+    {
+      "type": "link",
+      "name": "link_1",
+      "inputs": [{
+          "name": "data_1024",
+          "type": "byteArray"
+        },
+        {
+          "name": "mgrMsgs_1024",
+          "type": "byteArray"
+        },
+        {
+          "name": "tstMsgs_1024",
+          "type": "byteArray"
+        },
+        {
+          "name": "ntest",
+          "type": "uint32"
+        }
+      ],
+      "outputs": [{
+          "name": "data_1024",
+          "type": "byteArray",
+          "connections": [{
+            "inHunkIndex": 2,
+            "inHunkInput": 0
+          }]
+        },
+        {
+          "name": "mgrMsgs_1024",
+          "type": "byteArray",
+          "connections": [{
+            "inHunkIndex": 0,
+            "inHunkInput": 0
+          }]
+        },
+        {
+          "name": "tstMsgs_1024",
+          "type": "byteArray",
+          "connections": [{
+            "inHunkIndex": 3,
+            "inHunkInput": 0
+          }]
+        },
+        {
+          "name": "ntest",
+          "type": "uint32",
+          "connections": [{
+            "inHunkIndex": 4,
+            "inHunkInput": 0
+          }]
+        }
+      ],
+      "states": [{
+          "name": "isActive",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "otherLink",
+          "type": "uint16",
+          "value": 3
+        },
+        {
+          "name": "inputList",
+          "type": "string",
+          "value": "mgrMsgs (byteArray), tstMsgs (byteArray), ntest (uint32)"
+        },
+        {
+          "name": "outputList",
+          "type": "string",
+          "value": "mgrMsgs (byteArray), tstMsgs (byteArray), ntest (uint32)"
+        }
+      ]
+    },
+    {
+      "type": "comm/COBSerialUSB",
+      "name": "comm/COBSerialUSB_2",
+      "inputs": [{
+        "name": "data_1024",
+        "type": "byteArray"
+      }],
+      "outputs": [{
+        "name": "data_1024",
+        "type": "byteArray",
+        "connections": [{
+          "inHunkIndex": 1,
+          "inHunkInput": 0
+        }]
+      }],
+      "states": []
+    },
+    {
+      "type": "comm/COBSerialRJ45",
+      "name": "comm/COBSerialRJ45_3",
+      "inputs": [{
+        "name": "data_1024",
+        "type": "byteArray"
+      }],
+      "outputs": [{
+        "name": "data_1024",
+        "type": "byteArray",
+        "connections": [{
+          "inHunkIndex": 1,
+          "inHunkInput": 2
+        }]
+      }],
+      "states": []
+    },
+    {
+      "type": "math/adder",
+      "name": "math/adder_4",
+      "inputs": [{
+        "name": "numIn",
+        "type": "uint32"
+      }],
+      "outputs": [{
+        "name": "numOut",
+        "type": "uint32",
+        "connections": [{
+          "inHunkIndex": 1,
+          "inHunkInput": 3
+        }]
+      }],
+      "states": [{
+          "name": "numAddCBMod",
+          "type": "uint32",
+          "value": 120
+        },
+        {
+          "name": "numAdd",
+          "type": "uint32",
+          "value": 121
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "interpreterName": "cuttlefish",
+  "interpreterVersion": "v0.1",
+  "hunks": [
+    {
+      "type": "manager",
+      "name": "nrol",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "1",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "tlview",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "0",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "adhoc/webcam",
+      "name": "adhoc/webcam_2",
+      "outputs": [
+        {
+          "name": "frame",
+          "type": "ImageData",
+          "connections": [
+            {
+              "inHunkIndex": "4",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image/displayimagedata",
+      "name": "image/displayimagedata_4",
+      "inputs": [
+        {
+          "name": "image",
+          "type": "ImageData"
+        }
+      ]
+    },
+    {
+      "type": "adhoc/correlate",
+      "name": "adhoc/correlate_5",
+      "inputs": [
+        {
+          "name": "frame",
+          "type": "ImageData"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "correlation",
+          "type": "ImageData",
+          "connections": [
+            {
+              "inHunkIndex": "3",
+              "inHunkInput": "0"
+            },
+            {
+              "inHunkIndex": "5",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "adhoc/center",
+      "name": "adhoc/center_5",
+      "inputs": [
+        {
+          "name": "image",
+          "type": "ImageData"
+        }
+      ]
+    }
+  ]
+}

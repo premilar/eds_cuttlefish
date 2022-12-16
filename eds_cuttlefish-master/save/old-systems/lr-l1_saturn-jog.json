@@ -1,0 +1,1811 @@
+{
+  "interpreterName": "cuttlefish",
+  "interpreterVersion": "v0.1",
+  "hunks": [
+    {
+      "type": "manager",
+      "name": "nrol",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "1",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "tlview",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "0",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "link",
+      "name": "link_2",
+      "inputs": [
+        {
+          "name": "data",
+          "type": "byteArray"
+        },
+        {
+          "name": "mgrMsgs",
+          "type": "byteArray"
+        },
+        {
+          "name": "auto_98_2",
+          "type": "byteArray"
+        },
+        {
+          "name": "auto_170_3",
+          "type": "byteArray"
+        },
+        {
+          "name": "auto_254_4",
+          "type": "byteArray"
+        },
+        {
+          "name": "auto_105_5",
+          "type": "byteArray"
+        },
+        {
+          "name": "auto_43_6",
+          "type": "byteArray"
+        },
+        {
+          "name": "auto_95_7",
+          "type": "boolean"
+        },
+        {
+          "name": "auto_115_7",
+          "type": "MDmseg"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "data",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "3",
+              "inHunkInput": "0"
+            }
+          ]
+        },
+        {
+          "name": "mgrMsgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "4",
+              "inHunkInput": "0"
+            }
+          ]
+        },
+        {
+          "name": "auto_4_3",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "5",
+              "inHunkInput": "0"
+            }
+          ]
+        },
+        {
+          "name": "auto_160_4",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "6",
+              "inHunkInput": "0"
+            }
+          ]
+        },
+        {
+          "name": "auto_121_5",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "7",
+              "inHunkInput": "0"
+            }
+          ]
+        },
+        {
+          "name": "auto_221_6",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "8",
+              "inHunkInput": "0"
+            }
+          ]
+        },
+        {
+          "name": "auto_131_7",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "9",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "value": "true"
+        },
+        {
+          "name": "otherLink",
+          "type": "uint16",
+          "value": "1"
+        },
+        {
+          "name": "inputList",
+          "type": "string",
+          "value": "mgrMsgs (byteArray), auto_98_2 (byteArray), auto_170_3 (byteArray), auto_254_4 (byteArray), auto_105_5 (byteArray), auto_43_6 (byteArray), auto_95_7 (boolean), auto_115_7 (MDmseg)"
+        },
+        {
+          "name": "outputList",
+          "type": "string",
+          "value": "mgrMsgs (byteArray), auto_4_3 (byteArray), auto_160_4 (byteArray), auto_121_5 (byteArray), auto_221_6 (byteArray), auto_131_7 (byteArray)"
+        }
+      ],
+      "contains": {
+        "interpreterName": "ponyo",
+        "interpreterVersion": "v0.1",
+        "hunks": [
+          {
+            "type": "manager",
+            "name": "ponyo_one",
+            "inputs": [
+              {
+                "name": "mgrMsgs_1024",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "mgrMsgs_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "1",
+                    "inHunkInput": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "link",
+            "name": "link_1",
+            "inputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray"
+              },
+              {
+                "name": "mgrMsgs_1024",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_45_3_512",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_218_4_512",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_59_5_512",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_170_6_512",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_182_7_512",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "2",
+                    "inHunkInput": "0"
+                  }
+                ]
+              },
+              {
+                "name": "mgrMsgs_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "0",
+                    "inHunkInput": "0"
+                  }
+                ]
+              },
+              {
+                "name": "auto_238_2_512",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "8",
+                    "inHunkInput": "1"
+                  }
+                ]
+              },
+              {
+                "name": "auto_60_3_512",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "9",
+                    "inHunkInput": "1"
+                  }
+                ]
+              },
+              {
+                "name": "auto_156_4_512",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "10",
+                    "inHunkInput": "1"
+                  }
+                ]
+              },
+              {
+                "name": "auto_231_5_512",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "11",
+                    "inHunkInput": "1"
+                  }
+                ]
+              },
+              {
+                "name": "auto_71_6_512",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "12",
+                    "inHunkInput": "1"
+                  }
+                ]
+              },
+              {
+                "name": "auto_176_7",
+                "type": "boolean",
+                "connections": [
+                  {
+                    "inHunkIndex": "8",
+                    "inHunkInput": "2"
+                  },
+                  {
+                    "inHunkIndex": "9",
+                    "inHunkInput": "2"
+                  },
+                  {
+                    "inHunkIndex": "11",
+                    "inHunkInput": "2"
+                  },
+                  {
+                    "inHunkIndex": "12",
+                    "inHunkInput": "2"
+                  }
+                ]
+              },
+              {
+                "name": "auto_150_7",
+                "type": "MDmseg",
+                "connections": [
+                  {
+                    "inHunkIndex": "13",
+                    "inHunkInput": "0"
+                  }
+                ]
+              }
+            ],
+            "states": [
+              {
+                "name": "isActive",
+                "type": "boolean",
+                "value": "true"
+              },
+              {
+                "name": "otherLink",
+                "type": "uint16",
+                "value": "2"
+              },
+              {
+                "name": "inputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray), auto_45_3 (byteArray), auto_218_4 (byteArray), auto_59_5 (byteArray), auto_170_6 (byteArray), auto_182_7 (byteArray)"
+              },
+              {
+                "name": "outputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray), auto_238_2 (byteArray), auto_60_3 (byteArray), auto_156_4 (byteArray), auto_231_5 (byteArray), auto_71_6 (byteArray), auto_176_7 (boolean), auto_150_7 (MDmseg)"
+              }
+            ]
+          },
+          {
+            "type": "comm/COBS_USB",
+            "name": "comm/COBS_USB_2",
+            "inputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "1",
+                    "inHunkInput": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "comm/COBSerial_A",
+            "name": "comm/COBSerial_A_3",
+            "inputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "8",
+                    "inHunkInput": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "comm/COBSerial_B",
+            "name": "comm/COBSerial_B_4",
+            "inputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "9",
+                    "inHunkInput": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "comm/COBSerial_D",
+            "name": "comm/COBSerial_D_5",
+            "inputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "10",
+                    "inHunkInput": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "comm/COBSerial_E",
+            "name": "comm/COBSerial_E_6",
+            "inputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "11",
+                    "inHunkInput": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "comm/COBSerial_F",
+            "name": "comm/COBSerial_F_7",
+            "inputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "12",
+                    "inHunkInput": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "link",
+            "name": "link_8",
+            "inputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray"
+              },
+              {
+                "name": "mgrMsgs_512",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_29_2",
+                "type": "boolean"
+              },
+              {
+                "name": "auto_132_2",
+                "type": "mseg"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "3",
+                    "inHunkInput": "0"
+                  }
+                ]
+              },
+              {
+                "name": "mgrMsgs_512",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "1",
+                    "inHunkInput": "2"
+                  }
+                ]
+              }
+            ],
+            "states": [
+              {
+                "name": "isActive",
+                "type": "boolean",
+                "value": "true"
+              },
+              {
+                "name": "otherLink",
+                "type": "uint16",
+                "value": "1"
+              },
+              {
+                "name": "inputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray), auto_29_2 (boolean), auto_132_2 (mseg)"
+              },
+              {
+                "name": "outputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray)"
+              }
+            ],
+            "contains": {
+              "interpreterName": "ponyo",
+              "interpreterVersion": "v0.1",
+              "hunks": [
+                {
+                  "type": "manager",
+                  "name": "ponyo_one",
+                  "inputs": [
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "1",
+                          "inHunkInput": "1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "name": "link_1",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "2",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "0",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_159_7",
+                      "type": "boolean",
+                      "connections": [
+                        {
+                          "inHunkIndex": "3",
+                          "inHunkInput": "1"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_135_2",
+                      "type": "mseg",
+                      "connections": [
+                        {
+                          "inHunkIndex": "3",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    }
+                  ],
+                  "states": [
+                    {
+                      "name": "isActive",
+                      "type": "boolean",
+                      "value": "true"
+                    },
+                    {
+                      "name": "otherLink",
+                      "type": "uint16",
+                      "value": "8"
+                    },
+                    {
+                      "name": "inputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray)"
+                    },
+                    {
+                      "name": "outputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray), auto_159_7 (boolean), auto_135_2 (mseg)"
+                    }
+                  ]
+                },
+                {
+                  "type": "comm/COBSerial_A",
+                  "name": "comm/COBSerial_A_2",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "1",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "driver/stepper",
+                  "name": "step_driver",
+                  "inputs": [
+                    {
+                      "name": "increment",
+                      "type": "mseg"
+                    },
+                    {
+                      "name": "enable",
+                      "type": "boolean"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "increment",
+                      "type": "int32"
+                    },
+                    {
+                      "name": "stallGuard",
+                      "type": "uint32"
+                    }
+                  ],
+                  "states": [
+                    {
+                      "name": "current (6-24)",
+                      "type": "uint16",
+                      "value": "16"
+                    },
+                    {
+                      "name": "enable",
+                      "type": "boolean",
+                      "value": "true"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "link",
+            "name": "link_9",
+            "inputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray"
+              },
+              {
+                "name": "mgrMsgs_512",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_41_2",
+                "type": "boolean"
+              },
+              {
+                "name": "auto_18_2",
+                "type": "mseg"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "4",
+                    "inHunkInput": "0"
+                  }
+                ]
+              },
+              {
+                "name": "mgrMsgs_512",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "1",
+                    "inHunkInput": "3"
+                  }
+                ]
+              }
+            ],
+            "states": [
+              {
+                "name": "isActive",
+                "type": "boolean",
+                "value": "true"
+              },
+              {
+                "name": "otherLink",
+                "type": "uint16",
+                "value": "1"
+              },
+              {
+                "name": "inputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray), auto_41_2 (boolean), auto_18_2 (mseg)"
+              },
+              {
+                "name": "outputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray)"
+              }
+            ],
+            "contains": {
+              "interpreterName": "ponyo",
+              "interpreterVersion": "v0.1",
+              "hunks": [
+                {
+                  "type": "manager",
+                  "name": "ponyo_one",
+                  "inputs": [
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "1",
+                          "inHunkInput": "1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "name": "link_1",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "2",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "0",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_28_2",
+                      "type": "boolean",
+                      "connections": [
+                        {
+                          "inHunkIndex": "3",
+                          "inHunkInput": "1"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_72_2",
+                      "type": "mseg",
+                      "connections": [
+                        {
+                          "inHunkIndex": "3",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    }
+                  ],
+                  "states": [
+                    {
+                      "name": "isActive",
+                      "type": "boolean",
+                      "value": "true"
+                    },
+                    {
+                      "name": "otherLink",
+                      "type": "uint16",
+                      "value": "9"
+                    },
+                    {
+                      "name": "inputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray)"
+                    },
+                    {
+                      "name": "outputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray), auto_28_2 (boolean), auto_72_2 (mseg)"
+                    }
+                  ]
+                },
+                {
+                  "type": "comm/COBSerial_A",
+                  "name": "comm/COBSerial_A_2",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "1",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "driver/stepper",
+                  "name": "step_driver",
+                  "inputs": [
+                    {
+                      "name": "increment",
+                      "type": "mseg"
+                    },
+                    {
+                      "name": "enable",
+                      "type": "boolean"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "increment",
+                      "type": "int32"
+                    },
+                    {
+                      "name": "stallGuard",
+                      "type": "uint32"
+                    }
+                  ],
+                  "states": [
+                    {
+                      "name": "current (6-24)",
+                      "type": "uint16",
+                      "value": "16"
+                    },
+                    {
+                      "name": "enable",
+                      "type": "boolean",
+                      "value": "true"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "link",
+            "name": "link_10",
+            "inputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray"
+              },
+              {
+                "name": "mgrMsgs_512",
+                "type": "byteArray"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "5",
+                    "inHunkInput": "0"
+                  }
+                ]
+              },
+              {
+                "name": "mgrMsgs_512",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "1",
+                    "inHunkInput": "4"
+                  }
+                ]
+              }
+            ],
+            "states": [
+              {
+                "name": "isActive",
+                "type": "boolean",
+                "value": "false"
+              },
+              {
+                "name": "otherLink",
+                "type": "uint16",
+                "value": "0"
+              },
+              {
+                "name": "inputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray)"
+              },
+              {
+                "name": "outputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray)"
+              }
+            ]
+          },
+          {
+            "type": "link",
+            "name": "link_11",
+            "inputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray"
+              },
+              {
+                "name": "mgrMsgs_512",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_26_2",
+                "type": "boolean"
+              },
+              {
+                "name": "auto_172_2",
+                "type": "mseg"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "6",
+                    "inHunkInput": "0"
+                  }
+                ]
+              },
+              {
+                "name": "mgrMsgs_512",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "1",
+                    "inHunkInput": "5"
+                  }
+                ]
+              }
+            ],
+            "states": [
+              {
+                "name": "isActive",
+                "type": "boolean",
+                "value": "true"
+              },
+              {
+                "name": "otherLink",
+                "type": "uint16",
+                "value": "1"
+              },
+              {
+                "name": "inputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray), auto_26_2 (boolean), auto_172_2 (mseg)"
+              },
+              {
+                "name": "outputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray)"
+              }
+            ],
+            "contains": {
+              "interpreterName": "ponyo",
+              "interpreterVersion": "v0.1",
+              "hunks": [
+                {
+                  "type": "manager",
+                  "name": "ponyo_one",
+                  "inputs": [
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "1",
+                          "inHunkInput": "1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "name": "link_1",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "2",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "0",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_31_2",
+                      "type": "boolean",
+                      "connections": [
+                        {
+                          "inHunkIndex": "3",
+                          "inHunkInput": "1"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_220_2",
+                      "type": "mseg",
+                      "connections": [
+                        {
+                          "inHunkIndex": "3",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    }
+                  ],
+                  "states": [
+                    {
+                      "name": "isActive",
+                      "type": "boolean",
+                      "value": "true"
+                    },
+                    {
+                      "name": "otherLink",
+                      "type": "uint16",
+                      "value": "11"
+                    },
+                    {
+                      "name": "inputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray)"
+                    },
+                    {
+                      "name": "outputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray), auto_31_2 (boolean), auto_220_2 (mseg)"
+                    }
+                  ]
+                },
+                {
+                  "type": "comm/COBSerial_A",
+                  "name": "comm/COBSerial_A_2",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "1",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "driver/stepper",
+                  "name": "step_driver",
+                  "inputs": [
+                    {
+                      "name": "increment",
+                      "type": "mseg"
+                    },
+                    {
+                      "name": "enable",
+                      "type": "boolean"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "increment",
+                      "type": "int32"
+                    },
+                    {
+                      "name": "stallGuard",
+                      "type": "uint32"
+                    }
+                  ],
+                  "states": [
+                    {
+                      "name": "current (6-24)",
+                      "type": "uint16",
+                      "value": "16"
+                    },
+                    {
+                      "name": "enable",
+                      "type": "boolean",
+                      "value": "true"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "link",
+            "name": "link_12",
+            "inputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray"
+              },
+              {
+                "name": "mgrMsgs_512",
+                "type": "byteArray"
+              },
+              {
+                "name": "auto_70_2",
+                "type": "boolean"
+              },
+              {
+                "name": "auto_43_2",
+                "type": "mseg"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "data_1024",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "7",
+                    "inHunkInput": "0"
+                  }
+                ]
+              },
+              {
+                "name": "mgrMsgs_512",
+                "type": "byteArray",
+                "connections": [
+                  {
+                    "inHunkIndex": "1",
+                    "inHunkInput": "6"
+                  }
+                ]
+              }
+            ],
+            "states": [
+              {
+                "name": "isActive",
+                "type": "boolean",
+                "value": "true"
+              },
+              {
+                "name": "otherLink",
+                "type": "uint16",
+                "value": "1"
+              },
+              {
+                "name": "inputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray), auto_70_2 (boolean), auto_43_2 (mseg)"
+              },
+              {
+                "name": "outputList",
+                "type": "string",
+                "value": "mgrMsgs (byteArray)"
+              }
+            ],
+            "contains": {
+              "interpreterName": "ponyo",
+              "interpreterVersion": "v0.1",
+              "hunks": [
+                {
+                  "type": "manager",
+                  "name": "ponyo_one",
+                  "inputs": [
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "1",
+                          "inHunkInput": "1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "name": "link_1",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    },
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "2",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "mgrMsgs_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "0",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_229_2",
+                      "type": "boolean",
+                      "connections": [
+                        {
+                          "inHunkIndex": "3",
+                          "inHunkInput": "1"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "auto_119_2",
+                      "type": "mseg",
+                      "connections": [
+                        {
+                          "inHunkIndex": "3",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    }
+                  ],
+                  "states": [
+                    {
+                      "name": "isActive",
+                      "type": "boolean",
+                      "value": "true"
+                    },
+                    {
+                      "name": "otherLink",
+                      "type": "uint16",
+                      "value": "12"
+                    },
+                    {
+                      "name": "inputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray)"
+                    },
+                    {
+                      "name": "outputList",
+                      "type": "string",
+                      "value": "mgrMsgs (byteArray), auto_229_2 (boolean), auto_119_2 (mseg)"
+                    }
+                  ]
+                },
+                {
+                  "type": "comm/COBSerial_A",
+                  "name": "comm/COBSerial_A_2",
+                  "inputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "data_1024",
+                      "type": "byteArray",
+                      "connections": [
+                        {
+                          "inHunkIndex": "1",
+                          "inHunkInput": "0"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "driver/stepper",
+                  "name": "step_driver",
+                  "inputs": [
+                    {
+                      "name": "increment",
+                      "type": "mseg"
+                    },
+                    {
+                      "name": "enable",
+                      "type": "boolean"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "name": "increment",
+                      "type": "int32"
+                    },
+                    {
+                      "name": "stallGuard",
+                      "type": "uint32"
+                    }
+                  ],
+                  "states": [
+                    {
+                      "name": "current (6-24)",
+                      "type": "uint16",
+                      "value": "16"
+                    },
+                    {
+                      "name": "enable",
+                      "type": "boolean",
+                      "value": "true"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "control/MDtoDmseg",
+            "name": "control/MDtoDmseg_13",
+            "inputs": [
+              {
+                "name": "motionSegment",
+                "type": "MDmseg"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "dmSegX",
+                "type": "mseg",
+                "connections": [
+                  {
+                    "inHunkIndex": "8",
+                    "inHunkInput": "3"
+                  }
+                ]
+              },
+              {
+                "name": "dmSegY",
+                "type": "mseg",
+                "connections": [
+                  {
+                    "inHunkIndex": "11",
+                    "inHunkInput": "3"
+                  },
+                  {
+                    "inHunkIndex": "12",
+                    "inHunkInput": "3"
+                  }
+                ]
+              },
+              {
+                "name": "dmSegZ",
+                "type": "mseg",
+                "connections": [
+                  {
+                    "inHunkIndex": "9",
+                    "inHunkInput": "3"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "pipes/vfptc",
+      "name": "pipes/vfptc_3",
+      "inputs": [
+        {
+          "name": "data",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "data",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "2",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "pipe status",
+          "type": "string",
+          "value": "open"
+        },
+        {
+          "name": "websocket port",
+          "type": "string",
+          "value": "2042"
+        },
+        {
+          "name": "usb product id",
+          "type": "string",
+          "value": "8022"
+        },
+        {
+          "name": "pipe reset",
+          "type": "boolean",
+          "value": "false"
+        },
+        {
+          "name": "serialport status",
+          "type": "string",
+          "value": "open"
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "view_4",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "2",
+              "inHunkInput": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "view_5",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "2",
+              "inHunkInput": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "view_6",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "2",
+              "inHunkInput": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "view_7",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "2",
+              "inHunkInput": "4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "view_8",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "2",
+              "inHunkInput": "5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "name": "view_9",
+      "inputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "msgs",
+          "type": "byteArray",
+          "connections": [
+            {
+              "inHunkIndex": "2",
+              "inHunkInput": "6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "interface/button",
+      "name": "interface/button_10",
+      "outputs": [
+        {
+          "name": "onclick",
+          "type": "boolean",
+          "connections": [
+            {
+              "inHunkIndex": "2",
+              "inHunkInput": "7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "adhoc/saturn",
+      "name": "adhoc/saturn_11",
+      "inputs": [
+        {
+          "name": "posn",
+          "type": "array"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "posn",
+          "type": "array",
+          "connections": [
+            {
+              "inHunkIndex": "13",
+              "inHunkInput": "0"
+            }
+          ]
+        },
+        {
+          "name": "motionSegment",
+          "type": "MDmseg",
+          "connections": [
+            {
+              "inHunkIndex": "2",
+              "inHunkInput": "8"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "incremental mode",
+          "type": "boolean",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "interface/array",
+      "name": "interface/array_12",
+      "outputs": [
+        {
+          "name": "arr",
+          "type": "array",
+          "connections": [
+            {
+              "inHunkIndex": "11",
+              "inHunkInput": "0"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "csv",
+          "type": "string",
+          "value": "0, 0, 0"
+        }
+      ]
+    },
+    {
+      "type": "data/logger",
+      "name": "data/logger_13",
+      "inputs": [
+        {
+          "name": "tolog",
+          "type": "reference"
+        }
+      ],
+      "states": [
+        {
+          "name": "prefix",
+          "type": "string",
+          "value": "LOG:"
+        },
+        {
+          "name": "console",
+          "type": "boolean",
+          "value": "true"
+        }
+      ]
+    }
+  ]
+}

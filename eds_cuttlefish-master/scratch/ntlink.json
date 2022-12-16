@@ -1,0 +1,48 @@
+{
+    "programname": "ntlink",
+    "hunks": [
+    {
+        "name": "link",
+        "id": "lnkone",
+        "state": {
+          "inputList": "msgs (Object), ipOne (Number)",
+          "outputList": "msgs (Object), opOne (Number)"
+        }
+    },
+    {
+        "name": "comm/websocketclient",
+        "id": "wsclient",
+        "state": {
+          "retrycount": 2
+        }
+    },
+    {
+        "name": "view",
+        "id": "nautilusview"
+    }],
+    "links": [
+    {
+        "outhunk": "lnkone",
+        "outname": "data",
+        "inhunk": "wsclient",
+        "inname": "data"
+    },
+    {
+        "outhunk": "wsclient",
+        "outname": "data",
+        "inhunk": "lnkone",
+        "inname": "data"
+    },
+    {
+        "outhunk": "nautilusview",
+        "outname": "msgs",
+        "inhunk": "lnkone",
+        "inname": "msgs"
+    },
+    {
+        "outhunk": "lnkone",
+        "outname": "msgs",
+        "inhunk": "nautilusview",
+        "inname": "msgs"
+    }]
+}

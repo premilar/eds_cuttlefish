@@ -1,0 +1,78 @@
+{
+    "programname": "linktest",
+    "hunks": [
+    {
+        "name": "input/string",
+        "id": "String_X"
+    },
+    {
+        "name": "interface/logger",
+        "id": "Logger_Uno"
+    },
+    {
+        "name": "interface/logger",
+        "id": "Logger_Duo"
+    },
+    {
+        "name": "link",
+        "id": "lnkone",
+        "state": {
+          "inputList": "msgs (byteArray), lnkIpOne (uint32)",
+          "outputList": "msgs (byteArray), linkReturnOne (uint32)"
+        }
+    },
+    {
+        "name": "comm/websocketclient",
+        "id": "wsclient",
+        "state": {
+          "retrycount": 0
+        }
+    },
+    {
+        "name": "view",
+        "id": "nautilusview"
+    }],
+    "links": [
+    {
+        "outhunk": "String_X",
+        "outname": "string",
+        "inhunk": "Logger_Uno",
+        "inname": "tolog"
+    },
+    {
+        "outhunk": "lnkone",
+        "outname": "data",
+        "inhunk": "wsclient",
+        "inname": "data"
+    },
+    {
+        "outhunk": "wsclient",
+        "outname": "data",
+        "inhunk": "lnkone",
+        "inname": "data"
+    },
+    {
+        "outhunk": "nautilusview",
+        "outname": "msgs",
+        "inhunk": "lnkone",
+        "inname": "zero"
+    },
+    {
+        "outhunk": "lnkone",
+        "outname": "zero",
+        "inhunk": "nautilusview",
+        "inname": "msgs"
+    },
+    {
+        "outhunk": "String_X",
+        "outname": "string",
+        "inhunk": "lnkone",
+        "inname": "two"
+    },
+    {
+        "outhunk": "lnkone",
+        "outname": "one",
+        "inhunk": "Logger_Duo",
+        "inname": "tolog"
+    }]
+}
